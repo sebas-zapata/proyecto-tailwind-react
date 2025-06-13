@@ -7,7 +7,6 @@ const Form = () => {
         Contáctame
       </h2>
       <form className="space-y-4">
-        {/* Campo de nombre o correo */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Correo electrónico
@@ -19,7 +18,6 @@ const Form = () => {
           />
         </div>
 
-        {/* Campo de mensaje */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Mensaje
@@ -31,7 +29,6 @@ const Form = () => {
           ></textarea>
         </div>
 
-        {/* Botón */}
         <button
           type="submit"
           className="w-full bg-purple-800 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded-md transition"

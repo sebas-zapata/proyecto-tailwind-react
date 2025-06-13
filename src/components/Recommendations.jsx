@@ -8,7 +8,6 @@ const Recommendations = () => {
       </h2>
 
       <article className="flex flex-wrap justify-evenly gap-3">
-        {/* Recomendación 1 */}
         <div className="bg-white p-6 rounded-xl shadow-md w-full sm:w-80 transition-transform hover:bg-purple-300 hover:scale-105 duration-700">
           <p className="text-gray-700 mb-4">
             “Demostró gran dominio de React y Tailwind en cada proyecto. Es muy
@@ -19,7 +18,6 @@ const Recommendations = () => {
           </span>
         </div>
 
-        {/* Recomendación 2 */}
         <article className="bg-white p-6 rounded-xl shadow-lg w-full sm:w-80 transition-transform hover:bg-purple-300 hover:scale-105 duration-300">
           <p className="text-gray-700 mb-4">
             “Trabajar con él fue un placer. Siempre aporta ideas claras y
@@ -30,7 +28,6 @@ const Recommendations = () => {
           </span>
         </article>
 
-        {/* Recomendación 3 */}
         <article className="bg-white p-6 rounded-xl shadow-md w-full sm:w-80 transition-transform hover:bg-purple-300 hover:scale-105 duration-300">
           <p className="text-gray-700 mb-4">
             “Tiene habilidades técnicas muy sólidas y una gran actitud para el
@@ -51,7 +48,6 @@ const Recommendations = () => {
             — Equipo de Desarrollo - Proyecto ERP
           </span>
         </article>
-        
       </article>
     </section>
   );

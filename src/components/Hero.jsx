@@ -1,7 +1,7 @@
 import React from "react";
 import Foto from "../assets/Foto portafolio.jpg";
 
-const Hero = () => {
+const Hero = ({ nombre, descripcion }) => {
   return (
     <section className="py-12 px-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
@@ -15,15 +15,9 @@ const Hero = () => {
 
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold text-purple-800 mb-4">
-            Hola, soy Sebastian Zapata
+            Hola, soy {nombre}
           </h1>
-          <p className="text-lg text-gray-600 mb-6">
-            Soy un desarrollador web con sólidos conocimientos en HTML, CSS,
-            JavaScript, y experiencia construyendo interfaces modernas con React
-            y Tailwind CSS. Me apasiona crear sitios web responsivos, limpios y
-            funcionales, enfocados en la experiencia del usuario y buenas
-            prácticas de desarrollo.
-          </p>
+          <p className="text-lg text-gray-600 mb-6">{descripcion}</p>
         </div>
       </div>
     </section>

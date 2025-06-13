@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ nombre, correo, telefono }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -9,10 +9,10 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
             <a href="/" className="text-xl text-white">
-              Sebastian Zapata
+              {nombre}
             </a>
-            <h3 className="text-white">zapatajuan351@gmail.com</h3>
-            <h6 className="text-white">+57 3225550261</h6>
+            <h3 className="text-white">{correo}</h3>
+            <h6 className="text-white">{telefono}</h6>
           </div>
           <div className="hidden md:flex space-x-6">
             <a
@@ -43,7 +43,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-gray-700 focus:outline-none"
+              className="text-white focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -63,16 +63,28 @@ const Navbar = () => {
 
       {menuOpen && (
         <div className="md:hidden px-7 py-6 pb-4 space-y-2">
-          <a href="#" className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded">
+          <a
+            href="#"
+            className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
+          >
             Inicio
           </a>
-          <a href="#" className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded">
+          <a
+            href="#"
+            className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
+          >
             Blog
           </a>
-          <a href="#" className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded">
+          <a
+            href="#"
+            className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
+          >
             Sobre mí
           </a>
-          <a href="#" className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded">
+          <a
+            href="#"
+            className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
+          >
             Contacto
           </a>
         </div>
