@@ -12,16 +12,12 @@ function App() {
   return (
     <>
       <header>
-        <Navbar nombre="Sebastian Zapata" correo="zapatajuan351@gmail.com" telefono="+57 3225550261" />
+        <Navbar nombre="Remote Code" />
       </header>
       <main>
         <Hero
-          nombre="Sebastian Zapata"
-          descripcion="Soy un desarrollador web con sólidos conocimientos en HTML, CSS,
-            JavaScript, y experiencia construyendo interfaces modernas con React
-            y Tailwind CSS. Me apasiona crear sitios web responsivos, limpios y
-            funcionales, enfocados en la experiencia del usuario y buenas
-            prácticas de desarrollo."
+          nombre="Remote Code"
+          descripcion="Desarrollo de software a la medida para negocios. Transformamos necesidades complejas en aplicaciones web eficientes, escalables y diseñadas para optimizar sus procesos de negocio."
         />
         <Skills />
         <Projects />

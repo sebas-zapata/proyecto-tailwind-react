@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const Navbar = ({ nombre, correo, telefono }) => {
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -8,18 +9,17 @@ const Navbar = ({ nombre, correo, telefono }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
-            <a href="/" className="text-xl text-white">
+            <a href="/" className="text-xl font-bold text-white">
               {nombre}
             </a>
-            <h3 className="text-white">{correo}</h3>
             <h6 className="text-white">{telefono}</h6>
-          </div>
+          </div>  
           <div className="hidden md:flex space-x-6">
             <a
               href="#"
               className="p-2 text-white hover:bg-white hover:text-purple-800 hover:rounded"
             >
-              Sobre Mi
+              Sobre Nosotros
             </a>
             <a
               href="#"
@@ -33,17 +33,11 @@ const Navbar = ({ nombre, correo, telefono }) => {
             >
               Proyectos
             </a>
-            <a
-              href="#"
-              className="p-2 text-white hover:bg-white hover:text-purple-800 hover:rounded"
-            >
-              Recomendaciones
-            </a>
           </div>
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-white focus:outline-none"
+              className="text-white focus:outline-none mous"
             >
               <svg
                 className="h-6 w-6"
@@ -67,25 +61,19 @@ const Navbar = ({ nombre, correo, telefono }) => {
             href="#"
             className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
-            Inicio
+            Sobre Nosotros
           </a>
           <a
             href="#"
             className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
-            Blog
+            Habilidades
           </a>
           <a
             href="#"
             className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
-            Sobre mí
-          </a>
-          <a
-            href="#"
-            className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
-          >
-            Contacto
+            Proyectos
           </a>
         </div>
       )}
