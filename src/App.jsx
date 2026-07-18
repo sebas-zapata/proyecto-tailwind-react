@@ -3,7 +3,6 @@ import Navbar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Recommendations from "./components/Recommendations";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -21,7 +20,6 @@ function App() {
         />
         <Skills />
         <Projects />
-        <Recommendations />
         <Form />
         <Footer />
       </main>
