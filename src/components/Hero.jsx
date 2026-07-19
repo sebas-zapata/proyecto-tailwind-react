@@ -16,7 +16,7 @@ const Hero = ({ nombre, descripcion }) => {
         </div>
 
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h1 className="text-3xl flex items-center font-bold justify-center md:text-3xl lg:text-4xl md:justify-start text-purple-800 mb-4">
+          <h1 className="text-2xl flex items-center font-bold justify-center md:text-3xl lg:text-4xl md:justify-start text-purple-800 mb-4">
             < FaHandPeace className=" me-2" /> Somos {nombre}
           </h1>
           <p className="text-lg text-gray-600 font-medium mb-6">{descripcion}</p>

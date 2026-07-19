@@ -66,7 +66,7 @@ const Navbar = ({ nombre, correo, telefono }) => {
       {menuOpen && (
         <div className="md:hidden px-7 py-6 pb-4 space-y-2">
           <a
-            href="#"
+            href="#sobre-nosotros"
             className="p-2 flex justify-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
             < RiTeamFill className="m-1" />
@@ -74,7 +74,7 @@ const Navbar = ({ nombre, correo, telefono }) => {
             Sobre Nosotros
           </a>
           <a
-            href="#"
+            href="#habilidades"
             className="p-2 flex justify-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
             < FaTools className="m-1" />
@@ -82,7 +82,7 @@ const Navbar = ({ nombre, correo, telefono }) => {
             Habilidades
           </a>
           <a
-            href="#"
+            href="#proyectos"
             className="p-2 flex justify-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
             < MdWork className="m-1" />
