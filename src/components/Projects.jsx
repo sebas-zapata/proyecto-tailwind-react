@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section className="container mx-auto px-4 py-8">
+    <section id="proyectos" className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-center text-purple-800 mb-10">Proyectos</h1>
 
       <div className="flex flex-wrap justify-center gap-6">

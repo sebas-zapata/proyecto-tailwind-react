@@ -2,11 +2,11 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <>
-      <div className="container m-auto px-1 py-1">
+    <section>
+      <div id="habilidades" className="container m-auto px-1 py-1">
         <h1 className="text-3xl text-center font-bold text-purple-800">Habilidades</h1>
       </div>
-      <div className="container m-auto flex flex-wrap flex-col lg:flex-row justify-between items-center gap-4 p-3">
+      <div className="container m-auto flex flex-wrap flex-col lg:flex-row justify-evenly items-center gap-4 p-3">
         <article className="bg-purple-800 p-6 rounded-2xl shadow-lg w-full lg:w-64 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl">
           <h2 className="text-xl font-bold text-white mb-2">HTML & CSS</h2>
           <p className="text-white mb-4">
@@ -65,7 +65,7 @@ const Skills = () => {
           </p>
         </article>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -1,3 +1,8 @@
+import { LuCodesandbox } from "react-icons/lu";
+import { FaTools } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
+import { RiTeamFill } from "react-icons/ri";
+import { FaHandPeace } from "react-icons/fa";
 import { useState } from "react";
 
 const Navbar = ({ nombre, correo, telefono }) => {
@@ -5,39 +10,42 @@ const Navbar = ({ nombre, correo, telefono }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-purple-800 shadow-md py-4">
+    <nav className="bg-purple-800 shadow-lg py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center">
+            < LuCodesandbox className="me-1 text-2xl text-white font-bold" />
             <a href="/" className="text-xl font-bold text-white">
               {nombre}
             </a>
-            <h6 className="text-white">{telefono}</h6>
-          </div>  
+          </div>
           <div className="hidden md:flex space-x-6">
             <a
-              href="#"
-              className="p-2 text-white hover:bg-white hover:text-purple-800 hover:rounded"
+              href="#sobre-nosotros"
+              className="p-2 text-white flex hover:bg-white hover:text-purple-800 hover:rounded"
             >
+              < RiTeamFill className="m-1" />
               Sobre Nosotros
             </a>
             <a
-              href="#"
-              className="p-2 text-white hover:bg-white hover:text-purple-800 hover:rounded"
+              href="#habilidades"
+              className="p-2 text-white flex hover:bg-white hover:text-purple-800 hover:rounded"
             >
+              < FaTools className="m-1" />
               Habilidades
             </a>
             <a
-              href="#"
-              className="p-2 text-white hover:bg-white hover:text-purple-800 hover:rounded"
+              href="#proyectos"
+              className="p-2 text-white flex hover:bg-white hover:text-purple-800 hover:rounded"
             >
+              < MdWork className="m-1" />
               Proyectos
             </a>
           </div>
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-white focus:outline-none mous"
+              className="text-white p-3 rounded-lg focus:outline-none cursor-pointer hover:bg-white hover:text-purple-800"
             >
               <svg
                 className="h-6 w-6"
@@ -59,20 +67,25 @@ const Navbar = ({ nombre, correo, telefono }) => {
         <div className="md:hidden px-7 py-6 pb-4 space-y-2">
           <a
             href="#"
-            className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
+            className="p-2 flex justify-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
+            < RiTeamFill className="m-1" />
+
             Sobre Nosotros
           </a>
           <a
             href="#"
-            className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
+            className="p-2 flex justify-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
+            < FaTools className="m-1" />
+
             Habilidades
           </a>
           <a
             href="#"
-            className="block p-2 text-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
+            className="p-2 flex justify-center text-white hover:bg-white hover:text-purple-800 hover:rounded"
           >
+            < MdWork className="m-1" />
             Proyectos
           </a>
         </div>
