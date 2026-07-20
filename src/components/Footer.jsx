@@ -35,8 +35,8 @@ const Footer = () => {
       <button
         onClick={scrollToTop}
         className={`fixed bottom-6 right-6 bg-purple-600 text-white p-4 rounded-full shadow-xl hover:bg-purple-700 cursor-pointer transition-all duration-300 md:hover:-translate-y-1 ${esVisible
-            ? "opacity-100 scale-100 pointer-events-auto"
-            : "opacity-0 scale-75 pointer-events-none"
+          ? "opacity-100 scale-100 pointer-events-auto"
+          : "opacity-0 scale-75 pointer-events-none"
           }`}
         aria-label="Volver arriba"
       >

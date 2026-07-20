@@ -5,7 +5,7 @@ import { FaHandPeace } from "react-icons/fa";
 const Hero = ({ nombre, descripcion }) => {
   return (
     <section id="sobre-nosotros" className="py-12 px-6">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
+      <div className="container mt-20 mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-full md:w-1/2 flex justify-center">
           <img
             src={logo}
