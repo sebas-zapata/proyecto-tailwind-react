@@ -3,23 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  /* Fondo con degradado de morado a azul */
   background: linear-gradient(135deg, #7c3fcb 50%, #04d1ffe4 70%);
   background-attachment: fixed;
-}
-
-/* Elemento para simular el brillo general o destello */
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* Un degradado desenfocado detrás del contenido para dar el efecto neón */
-  background: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.6) 0%, transparent 40%);
-  z-index: -1;
-  mix-blend-mode: color-dodge;
 }
 
 html {

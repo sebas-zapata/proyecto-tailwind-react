@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import SkillCard from "./components/SkillCard";
 import ProjectCard from "./components/ProjectCard";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 import "./App.css";
 
 import { MdWork } from "react-icons/md";
@@ -107,6 +108,7 @@ function App() {
 
           </div>
         </section>
+        < WhatsAppButton />
         <Footer />
       </main>
     </>
