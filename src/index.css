@@ -1,12 +1,24 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #7c3fcb 50%, #04d1ffe4 70%);
-  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Creamos una capa fija que Chrome móvil sí puede renderizar sin fallos */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Se adapta dinámicamente a la pantalla del móvil */
+  background: linear-gradient(135deg, #7c3fcb 50%, #00829fe4 70%);
+  z-index: -1;   /* Se mantiene detrás de todo tu contenido y del footer */
+  pointer-events: none; 
 }

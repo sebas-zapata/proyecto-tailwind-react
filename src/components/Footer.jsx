@@ -34,8 +34,7 @@ const Footer = () => {
     <div className="bg-purple-800">
       <button
         onClick={scrollToTop}
-        // Aplicamos clases condicionales de Tailwind para la animación de aparición
-        className={`fixed bottom-6 right-6 bg-purple-600 text-white p-4 rounded-full shadow-xl hover:bg-purple-700 transition-all duration-300 md:hover:-translate-y-1 ${esVisible
+        className={`fixed bottom-6 right-6 bg-purple-600 text-white p-4 rounded-full shadow-xl hover:bg-purple-700 cursor-pointer transition-all duration-300 md:hover:-translate-y-1 ${esVisible
             ? "opacity-100 scale-100 pointer-events-auto"
             : "opacity-0 scale-75 pointer-events-none"
           }`}

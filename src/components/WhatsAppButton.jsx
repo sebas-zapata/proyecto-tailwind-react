@@ -2,7 +2,7 @@ import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
-    const whatsappUrl = `https://wa.me/573148436917?text=Hola, estoy interesado en tus servicios.`;
+    const whatsappUrl = `https://wa.me/573052322981?text=Hola, estoy interesado en tus servicios.`;
     return (
         <a
             href={whatsappUrl}
@@ -10,13 +10,13 @@ const WhatsAppButton = () => {
             rel="noopener noreferrer"
             style={{
                 position: 'fixed',
-                bottom: '30px',
+                bottom: '10px',
                 left: '20px',
                 backgroundColor: '#25D366',
                 color: 'white',
                 borderRadius: '50%',
-                width: '60px',
-                height: '60px',
+                width: '55px',
+                height: '55px',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -27,7 +27,7 @@ const WhatsAppButton = () => {
             onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
             onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
         >
-            <FaWhatsapp size={40} />
+            <FaWhatsapp size={35} />
         </a>
 
     );

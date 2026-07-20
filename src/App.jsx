@@ -23,7 +23,43 @@ function App() {
           descripcion="Desarrollo de software a la medida para negocios. Transformamos necesidades complejas en aplicaciones web eficientes, escalables y diseñadas para optimizar sus procesos de negocio."
         />
         <section>
-          <div id="habilidades" className="container-400 m-auto  px-1 py-1 flex justify-center">
+          <div id="proyectos" className="container-400 m-auto flex justify-center px-1 py-1">
+            < MdWork className="m-2 text-2xl text-white" />
+            <h1 className="text-3xl font-bold text-center text-white mb-3">Proyectos</h1>
+          </div>
+          <div className="p-3 flex justify-center flex-wrap gap-9">
+            <ProjectCard
+              title="SISADMEDU"
+              description="Sistema web que centraliza la administración, control de notas, asistencias y comunicación para centros educativos."
+              technologies="Laravel •  MySQL • Bootstrap • Docker • Aiven"
+              link="https://sisadmedu.onrender.com/sisadmedu"
+            />
+
+            <ProjectCard
+              title="Deliciosas Hamburguesas"
+              description="Catálogo digital e interactivo de alto impacto visual, diseñado exclusivamente para la exhibición y presentación atractiva del menú de hamburguesas."
+              technologies="HTML y CSS • JavaScript Nativo"
+              link="https://deliciosashamburguesas.netlify.app"
+            />
+
+            <ProjectCard
+              title="ZetaPos"
+              description="Sistema web de gestión comercial diseñado para centralizar el control de ventas, flujos de caja (ingresos y egresos) y facturación automatizada con exportación a PDF."
+              technologies="JavaScript Nativo • Bootstrap"
+              link="https://sistema-de-compras-snowy.vercel.app"
+            />
+
+            <ProjectCard
+              title="API Clima"
+              description="Aplicación web interactiva que permite consultar el pronóstico del clima en tiempo real de cualquier ciudad. Ofrece una interfaz intuitiva y dinámica, mostrando datos meteorológicos clave como temperatura actual, humedad, condiciones climáticas generales."
+              technologies="JavaScript Nativo • OpenWeather"
+              link="https://aplicacion-clima-api.netlify.app/"
+            />
+
+          </div>
+        </section>
+        <section>
+          <div id="habilidades" className="container-400 m-auto mt-7 px-1 py-1 flex justify-center">
             < FaTools className="text-white m-2 text-2xl" /> <h1 className="text-3xl text-center font-bold text-white"> Habilidades</h1>
           </div>
 
@@ -73,37 +109,6 @@ function App() {
             <SkillCard
               title="MySQL y MongoDB"
               description="Diseño y optimización de bases de datos relacionales y NoSQL, garantizando la integridad, velocidad y seguridad de los datos."
-            />
-
-          </div>
-        </section>
-
-
-        <section>
-          <div id="proyectos" className="container-400 m-auto flex justify-center px-1 py-1">
-            < MdWork className="m-2 text-2xl text-white" />
-            <h1 className="text-3xl font-bold text-center text-white mb-3">Proyectos</h1>
-          </div>
-          <div className="p-3 flex justify-center flex-wrap gap-9">
-            <ProjectCard
-              title="SISADMEDU"
-              description="Sistema integral en la nube que centraliza la administración, control de notas y comunicación para centros educativos."
-              technologies="PHP y MySQL • Bootstrap • Docker • Aiven"
-              link="https://sisadmedu.onrender.com/sisadmedu"
-            />
-
-            <ProjectCard
-              title="Deliciosas Hamburguesas"
-              description="Catálogo digital e interactivo de alto impacto visual, diseñado exclusivamente para la exhibición y presentación atractiva del menú de hamburguesas."
-              technologies="HTML y CSS • JavaScript Nativo"
-              link="https://deliciosashamburguesas.netlify.app"
-            />
-
-            <ProjectCard
-              title="ZetaPos"
-              description="Sistema web de gestión comercial diseñado para centralizar el control de ventas, flujos de caja (ingresos y egresos) y facturación automatizada con exportación a PDF."
-              technologies="JavaScript Nativo • Bootstrap"
-              link="https://sistema-de-compras-snowy.vercel.app"
             />
 
           </div>
